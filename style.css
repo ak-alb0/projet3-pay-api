@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-pink: rgb(186, 66, 112);
+	--primary-white: rgb(251, 252, 254);
+	
+	--secondary-blue: rgb(54, 83, 107);
+	--secondary-mirage-blue: rgb(27, 38, 47);
+	--secondary-charm-pink: rgb(218, 109, 151);
+	--secondary-light-san-jan-blue: rgb(108, 130, 148);
+	--hgroup-weight: 400px;
+	--h-font: DM Serif Display;
+	--body-font: Public Sans;
+	
+	--h1-large-size: 72px;
+	--h1-large-line: 72px;
+	--h1-small-size: 56px;
+	--h1-small-line: 56px;
+
+	--h2-size: 48px;
+	--h2-line: 56px;
+
+	--h3-big-size: 32px;
+	--h3-big-line: 40px;
+	--h3-small-size: 18px;
+	--h3-small-line: 25px;
+	--h3-small-weight: 700px;
+
+	--h4-size: 24px;
+	--h4-size: 32px;
+
+	--body-size: 15px;
+	--body-line: 28px;
+}
+
+
+body {
+	padding: 40px 20px 40px 20px;
+    background-color: #EDF3F8;
+}
+
+/************************** navbar *******************************/
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav {
+	display: none;
+}
+
+.nav-boutton {
+	display: none;
+}
+
+/************************** partie 1 *******************************/
+
+.partie-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.partie-text h1 {
+	color: var(--secondary-blue);
+	font-size: var(--h1-small-size);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.partie1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.email-input {
+	padding: 12px 16px;
+	border-radius: 30px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+}
+
+.email-input::placeholder {
+	
+}
+
+.demo-button {
+	padding: 12px 16px;
+	border: none;
+	border-radius: 30px;
+	font-weight: bold;
+	background-color: var(--primary-pink);
+	color: var(--primary-white);
+}
+
+.demo-button:hover {
+	background-color: var(--secondary-charm-pink);
+}
+
+/************************** partie 2 *******************************/
+
+.partie2 {
+
+}
+
+/************************** partie 3 *******************************/
+
+
+
+/************************** partie 4 *******************************/
+
+
+
+/************************** partie 5 *******************************/
+
+
+
+/**************************  footer *******************************/
+
+footer {
+    background-color: #1B262F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-reseaux {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+    gap: 15px;
+}
+
+
+/**************************  responsive  tablet *******************************/
+
+@media screen and (min-width : 570px){
+	.menu-burger {
+		display: none;
+	}
+	.nav {
+		display: flex;
+		list-style: none;
+		align-items: center;
+		gap: 25px;
+	}
+	.nav li a {
+		color: var(--secondary-light-san-jan-blue);
+		text-decoration: none;
+		font-weight: bold;
+	}
+	nav li a:hover {
+		color: var(--secondary-blue);
+	}
+	
+	.nav-boutton {
+		display: flex;
+		padding: 12px 16px;
+		border: none;
+		border-radius: 30px;
+		font-weight: bold;
+		background-color: var(--primary-pink);
+		color: var(--primary-white);
+	}
+	
+	.nav-boutton:hover {
+		background-color: var(--secondary-charm-pink);
+	}
+}
+
+/**************************  responsive desktop  *******************************/
+
+@media screen and (min-width : 1081px){
+	.menu-burger {
+		display: none;
+	}
+	.nav {
+		display: flex;
+		list-style: none;
+		align-items: center;
+		gap: 25px;
+	}
+	.nav li a {
+		color: var(--secondary-light-san-jan-blue);
+		text-decoration: none;
+		font-weight: bold;
+	}
+	nav li a:hover {
+		color: var(--secondary-blue);
+	}
+	
+	.nav-boutton {
+		display: flex;
+		padding: 12px 16px;
+		border: none;
+		border-radius: 30px;
+		font-weight: bold;
+		background-color: var(--primary-pink);
+		color: var(--primary-white);
+	}
+	
+	.nav-boutton:hover {
+		background-color: var(--secondary-charm-pink);
+	}
+}
