@@ -7,7 +7,7 @@
 :root {
 	--primary-pink: rgb(186, 66, 112);
 	--primary-white: rgb(251, 252, 254);
-	
+
 	--secondary-blue: rgb(54, 83, 107);
 	--secondary-mirage-blue: rgb(27, 38, 47);
 	--secondary-charm-pink: rgb(218, 109, 151);
@@ -15,9 +15,10 @@
 	--hgroup-weight: 400px;
 	--h-font: DM Serif Display;
 	--body-font: Public Sans;
-	
+
 	--h1-large-size: 72px;
 	--h1-large-line: 72px;
+
 	--h1-small-size: 56px;
 	--h1-small-line: 56px;
 
@@ -26,9 +27,9 @@
 
 	--h3-big-size: 32px;
 	--h3-big-line: 40px;
+
 	--h3-small-size: 18px;
 	--h3-small-line: 25px;
-	--h3-small-weight: 700px;
 
 	--h4-size: 24px;
 	--h4-size: 32px;
@@ -37,13 +38,16 @@
 	--body-line: 28px;
 }
 
-
 body {
-	padding: 40px 20px 40px 20px;
-    background-color: #EDF3F8;
+	background-color: #edf3f8;
 }
 
 /************************** navbar *******************************/
+
+header {
+	padding: 40px 20px 10px 20px;
+	background-color: #c2d0da;
+}
 
 nav {
 	display: flex;
@@ -61,6 +65,20 @@ nav {
 
 /************************** partie 1 *******************************/
 
+.partie1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0px 30px 0px 30px;
+	height: 100%;
+}
+
+.image {
+	margin-left: 40px;
+	margin-top: -30px;
+}
+
 .partie-text {
 	display: flex;
 	flex-direction: column;
@@ -68,17 +86,12 @@ nav {
 
 .partie-text h1 {
 	color: var(--secondary-blue);
-	font-size: var(--h1-small-size);
+	font-size: var(--h4-size);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.partie1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+	margin-top: -70px;
+	padding-bottom: 15px;
 }
 
 form {
@@ -95,8 +108,21 @@ form {
 	border: none;
 }
 
+.partie-text p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-blue);
+	padding-bottom: 62px;
+}
+
+.partie-text span {
+	font-weight: bold;
+	margin-left: 10px
+}
+
 .email-input::placeholder {
-	
+	font-weight: bold;
 }
 
 .demo-button {
@@ -115,25 +141,73 @@ form {
 /************************** partie 2 *******************************/
 
 .partie2 {
+	background-color: var(--secondary-mirage-blue);
+	display: flex;
+	flex-direction: column;
+	color: var(--primary-white);
+	padding: 100px 0px 100px 0px;
+}
 
+.entreprise {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.entreprise-partie {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.text h2 {
+	padding-bottom: 20px;
+}
+
+.text p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 30px 0px 30px;
+}
+
+.text button {
+	border: 1px solid var(--primary-white);
+	background-color: var(--secondary-mirage-blue);
+	border-radius: 25px;
+	padding: 12px 25px 12px 25px;
+	color: var(--primary-white);
+	font-weight: bold;
+	margin-top: 70px;
+}
+
+.text button:hover {
+	background-color: var(--primary-white);
+	color: var(--secondary-mirage-blue);
 }
 
 /************************** partie 3 *******************************/
 
-
-
 /************************** partie 4 *******************************/
 
-
-
 /************************** partie 5 *******************************/
-
-
 
 /**************************  footer *******************************/
 
 footer {
-    background-color: #1B262F;
+	background-color: #1b262f;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -152,13 +226,12 @@ footer nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-    gap: 15px;
+	gap: 15px;
 }
-
 
 /**************************  responsive  tablet *******************************/
 
-@media screen and (min-width : 570px){
+@media screen and (min-width: 570px) {
 	.menu-burger {
 		display: none;
 	}
@@ -176,7 +249,7 @@ footer nav {
 	nav li a:hover {
 		color: var(--secondary-blue);
 	}
-	
+
 	.nav-boutton {
 		display: flex;
 		padding: 12px 16px;
@@ -186,7 +259,7 @@ footer nav {
 		background-color: var(--primary-pink);
 		color: var(--primary-white);
 	}
-	
+
 	.nav-boutton:hover {
 		background-color: var(--secondary-charm-pink);
 	}
@@ -194,7 +267,7 @@ footer nav {
 
 /**************************  responsive desktop  *******************************/
 
-@media screen and (min-width : 1081px){
+@media screen and (min-width: 1081px) {
 	.menu-burger {
 		display: none;
 	}
@@ -212,7 +285,7 @@ footer nav {
 	nav li a:hover {
 		color: var(--secondary-blue);
 	}
-	
+
 	.nav-boutton {
 		display: flex;
 		padding: 12px 16px;
@@ -222,7 +295,7 @@ footer nav {
 		background-color: var(--primary-pink);
 		color: var(--primary-white);
 	}
-	
+
 	.nav-boutton:hover {
 		background-color: var(--secondary-charm-pink);
 	}
