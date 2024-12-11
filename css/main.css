@@ -118,7 +118,7 @@ form {
 
 .partie-text span {
 	font-weight: bold;
-	margin-left: 10px
+	margin-left: 10px;
 }
 
 .email-input::placeholder {
@@ -191,6 +191,7 @@ form {
 	color: var(--primary-white);
 	font-weight: bold;
 	margin-top: 70px;
+	cursor: pointer;
 }
 
 .text button:hover {
@@ -212,6 +213,11 @@ footer {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	padding: 35px;
+}
+
+nav .logo {
+	padding-bottom: 15px;
 }
 
 footer nav {
@@ -221,12 +227,116 @@ footer nav {
 	justify-content: center;
 }
 
+footer li {
+	list-style: none;
+	padding: 15px;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--secondary-light-san-jan-blue);
+	cursor: pointer;
+}
+
+footer a:hover {
+	color: var(--primary-white);
+}
+
 .icon-reseaux {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 15px;
+	gap: 20px;
+	padding-top: 20px;
+}
+
+/* .icon-reseaux:hover {
+	color: var(--primary-pink);
+} */
+
+/*********************** pricing *****************************************/
+
+.pricing {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px 0px 20px;
+}
+
+.pricingh1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-blue);
+	font-size: var(--h4-size);
+	padding: 20px 0px 40px 0px;
+}
+
+.partie0 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.partie0 h3 {
+	color: var(--primary-pink);
+	font-size: var(--h3-small-line);
+	padding-bottom: 15px;
+}
+
+.partie0 p {
+	color: var(--secondary-blue);
+}
+
+.partie0 h2 {
+	color: var(--secondary-blue);
+	font-size: var(--h2-line);
+}
+
+.partie0 button {
+	padding: 10px 15px 10px 15px;
+	border-radius: 20px;
+	border: 1px solid var(--secondary-blue);
+	background-color: #edf3f8;
+	color: var(--secondary-blue);
+	font-weight: bold;
+}
+
+.partie0 button:hover {
+	background-color: var(--secondary-blue);
+	color: var(--primary-white);
+}
+
+.avantages {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.avantage {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.avantage2 p {
+	color: var(--secondary-light-san-jan-blue);
+}
+
+hr {
+	border: 1px solid var(--secondary-light-san-jan-blue);
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+}
+
+.partie-text h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-blue);
+	font-size: var(--h3-big-size);
+	padding: 30px 0px 5px 0px ;
 }
 
 /**************************  responsive  tablet *******************************/
@@ -268,35 +378,8 @@ footer nav {
 /**************************  responsive desktop  *******************************/
 
 @media screen and (min-width: 1081px) {
-	.menu-burger {
-		display: none;
-	}
-	.nav {
+	.partie2 {
 		display: flex;
-		list-style: none;
-		align-items: center;
-		gap: 25px;
-	}
-	.nav li a {
-		color: var(--secondary-light-san-jan-blue);
-		text-decoration: none;
-		font-weight: bold;
-	}
-	nav li a:hover {
-		color: var(--secondary-blue);
-	}
-
-	.nav-boutton {
-		display: flex;
-		padding: 12px 16px;
-		border: none;
-		border-radius: 30px;
-		font-weight: bold;
-		background-color: var(--primary-pink);
-		color: var(--primary-white);
-	}
-
-	.nav-boutton:hover {
-		background-color: var(--secondary-charm-pink);
+		flex-direction: row;
 	}
 }
