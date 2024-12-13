@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-pink: rgb(186, 66, 112);
+	--primary-white: rgb(251, 252, 254);
+
+	--secondary-blue: rgb(54, 83, 107);
+	--secondary-mirage-blue: rgb(27, 38, 47);
+	--secondary-charm-pink: rgb(218, 109, 151);
+	--secondary-light-san-jan-blue: rgb(108, 130, 148);
+	--hgroup-weight: 400px;
+	--h-font: DM Serif Display;
+	--body-font: Public Sans;
+
+	--h1-large-size: 72px;
+	--h1-large-line: 72px;
+
+	--h1-small-size: 56px;
+	--h1-small-line: 56px;
+
+	--h2-size: 48px;
+	--h2-line: 56px;
+
+	--h3-big-size: 32px;
+	--h3-big-line: 40px;
+
+	--h3-small-size: 18px;
+	--h3-small-line: 25px;
+
+	--h4-size: 24px;
+	--h4-size: 32px;
+
+	--body-size: 15px;
+	--body-line: 28px;
+}
+
+body {
+	background-color: #edf3f8;
+}
+
+/************************** navbar *******************************/
+
+header {
+	padding: 40px 20px 10px 20px;
+	background-color: #c2d0da;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav {
+	display: none;
+}
+
+.nav-boutton {
+	display: none;
+}

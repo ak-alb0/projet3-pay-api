@@ -65,6 +65,54 @@ nav {
 
 /************************** partie 1 *******************************/
 
+
+
+
+
+
+form {
+    width: 90%;
+}
+
+form, form .mail {
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"] {
+    border-radius: 99999999999999999999999999999999px;
+    border: none;
+    padding: 20px;
+    outline: none;
+    box-shadow: 5px 5px 10px #CCC;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+button, .button {
+    border-radius: 100px;
+    padding: 20px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border: none;
+}
+
+
+
+
+
+
 .partie1 {
 	display: flex;
 	align-items: center;
@@ -177,9 +225,7 @@ form {
 }
 
 .text p {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 	padding: 0px 30px 0px 30px;
 }
 
@@ -194,16 +240,21 @@ form {
 	cursor: pointer;
 }
 
+button a {
+	text-decoration: none;
+	color: var(--primary-white);
+}
+
 .text button:hover {
 	background-color: var(--primary-white);
 	color: var(--secondary-mirage-blue);
+	color: var(--secondary-mirage-blue);
 }
 
-/************************** partie 3 *******************************/
-
-/************************** partie 4 *******************************/
-
-/************************** partie 5 *******************************/
+.text a:hover {
+	background-color: var(--primary-white);
+	color: var(--secondary-mirage-blue);
+}
 
 /**************************  footer *******************************/
 
@@ -251,44 +302,6 @@ footer a:hover {
 	padding-top: 20px;
 }
 
-/* .icon-reseaux:hover {
-	color: var(--primary-pink);
-} */
-
-/*********************** pricing *****************************************/
-
-.pricing {
-	display: flex;
-	flex-direction: column;
-	padding: 0px 20px 0px 20px;
-}
-
-.pricingh1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--secondary-blue);
-	font-size: var(--h4-size);
-	padding: 20px 0px 40px 0px;
-}
-
-.partie0 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.partie0 h3 {
-	color: var(--primary-pink);
-	font-size: var(--h3-small-line);
-	padding-bottom: 15px;
-}
-
-.partie0 p {
-	color: var(--secondary-blue);
-}
-
 .partie0 h2 {
 	color: var(--secondary-blue);
 	font-size: var(--h2-line);
@@ -308,40 +321,45 @@ footer a:hover {
 	color: var(--primary-white);
 }
 
-.avantages {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.avantage {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
-}
-
-.avantage2 p {
-	color: var(--secondary-light-san-jan-blue);
-}
-
-hr {
-	border: 1px solid var(--secondary-light-san-jan-blue);
-	width: 100%;
-	margin: 10px 0px 10px 0px;
-}
-
-.partie-text h2 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--secondary-blue);
-	font-size: var(--h3-big-size);
-	padding: 30px 0px 5px 0px ;
-}
-
 /**************************  responsive  tablet *******************************/
 
 @media screen and (min-width: 570px) {
+
+
+
+	form .mail {
+        flex-direction: row;
+        gap: 0px
+    }
+
+    form .mail input[type="email"] {
+        box-shadow: none;
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    form h1 {
+        min-width: 48px;
+    }
+
+    .mail {
+        box-shadow: 5px 5px 10px #CCC;
+        width: min-content;
+        border-radius: 100px;
+    }
+
+    .mail button {
+        width: max-content;
+    }
+
+
+
+
+
+
 	.menu-burger {
 		display: none;
 	}
@@ -378,6 +396,16 @@ hr {
 /**************************  responsive desktop  *******************************/
 
 @media screen and (min-width: 1081px) {
+	nav {
+        max-width: 1100px;
+    }
+
+    section.hero {
+        flex-direction: row-reverse;
+    }
+
+
+
 	.partie2 {
 		display: flex;
 		flex-direction: row;
