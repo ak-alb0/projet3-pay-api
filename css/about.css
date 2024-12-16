@@ -298,4 +298,26 @@ footer a:hover {
 	.hr2 {
 		display: flex;
 	}
+
+
+
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	footer nav {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+	footer nav {
+		display: flex;
+		flex-direction: row;
+	}
+	.nav2 {
+		display: flex;
+		flex-direction: row;
+	}
 }

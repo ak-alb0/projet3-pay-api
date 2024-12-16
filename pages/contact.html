@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/contact.css">
-    <title>projet3-pay-api</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="/assets/logo.svg" alt="logo-payapi" />
-            <ul class="nav">
-                <li><a href="pages/pricing.html">Pricing</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-            <button class="nav-boutton">Schedule a Demo</button>
-            <img
-                src="/assets/menu-burger.svg"
-                alt="menu-burger"
-                class="menu-burger"
-            />
-        </nav>
-    </header>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/contact.css" />
+		<title>projet3-pay-api</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="/assets/logo.svg" alt="logo-payapi" />
+				<ul class="nav">
+					<li><a href="pages/pricing.html">Pricing</a></li>
+					<li><a href="pages/about.html">About</a></li>
+					<li><a href="pages/contact.html">Contact</a></li>
+				</ul>
+				<button class="nav-boutton">Schedule a Demo</button>
+				<img
+					src="/assets/menu-burger.svg"
+					alt="menu-burger"
+					class="menu-burger"
+				/>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>Submit a help request and we’ll get in touch shortly.</h1>
+			</section>
+			<section>
+				<form>
+					<input type="text" id="name" name="name" placeholder="Name" />
+
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email Address"
+					/>
+
+					<input
+						type="text"
+						id="company"
+						name="company"
+						placeholder="Company Name"
+					/>
+
+					<input type="text" id="title" name="title" placeholder="Title" />
+
+					<input
+						type="text"
+						id="message"
+						name="message"
+						placeholder="Message"
+					/>
+				</form>
+				<div class="checkbox">
+                    <input type="checkbox" id="cb1" />
+					<label for="">Stay up-to-date with company announcements and updates to our API</label>
+				</div>
+                <div class="button">
+                    <button>Submit</button>
+                </div>
+			</section>
+            <section>
+                <h2>Join the thousands of innovators already building with us</h2>
+                <div class="entreprise">
+					<div class="entreprise-partie">
+						<img src="/assets/tesla.svg" alt="tesla" />
+						<img src="/assets/hp.svg" alt="hp" />
+						<img src="/assets/google.svg" alt="google" />
+					</div>
+					<div class="entreprise-partie">
+						<img src="/assets/microsoft.svg" alt="miccrosoft" />
+						<img src="/assets/oracle.svg" alt="oracle" />
+						<img src="/assets/nvidia.svg" alt="nvidia" />
+					</div>
+				</div>
+            </section>
+		</main>
+
+		<footer>
+			<nav>
+				<div class="logo">
+					<img src="/assets/logo2.svg" alt="logo-payapi" />
+				</div>
+				<ul class="nav2">
+					<li><a href="/pages/pricing.html">Pricing</a></li>
+					<li><a href="/pages/about.html">About</a></li>
+					<li><a href="/pages/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="icon-reseaux">
+				<img src="/assets/facebook.svg" alt="facebook" />
+				<img src="/assets/twiter.svg" alt="twiter" />
+				<img src="/assets/in.svg" alt="in" />
+			</div>
+		</footer>
+	</body>
 </html>
