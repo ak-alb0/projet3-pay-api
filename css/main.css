@@ -63,123 +63,55 @@ nav {
 	display: none;
 }
 
+nav img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /************************** partie 1 *******************************/
 
-
-form {
-    width: 90%;
+.partie1 {
+	padding: 0px 20px 0px 20px;
 }
 
-form, form .mail {
-    gap: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+form .mail {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
-input[type="text"], input[type="email"] {
-    border-radius: 100px;
-    border: none;
-    padding: 20px;
-    outline: none;
-    box-shadow: 5px 5px 10px #CCC;
+input {
+	border-radius: 100px;
+	border: none;
+	padding: 20px;
+	outline: none;
+	box-shadow: 5px 5px 10px #ccc;
 }
 
 section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-button, .button {
-    border-radius: 100px;
-    padding: 20px;
-    background-color: #ba4270;
-    color: #fbfcfe;
-    border: none;
-}
-
-
-
-
-
-
-.partie1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0px 30px 0px 30px;
-	height: 100%;
-}
-
-.image {
-	margin-left: 40px;
-	margin-top: -30px;
-}
-
-.partie-text {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.partie-text h1 {
-	color: var(--secondary-blue);
-	font-size: var(--h4-size);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: -70px;
-	padding-bottom: 15px;
+form button {
+	border-radius: 100px;
+	padding: 20px;
+	background-color: var(--primary-pink);
+	color: #fbfcfe;
+	border: none;
+}
+
+button:hover {
+	background-color: var(--secondary-charm-pink);
 }
 
 form {
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
-}
-
-.email-input {
-	padding: 12px 16px;
-	border-radius: 30px;
-	font-size: 16px;
-	outline: none;
-	border: none;
-}
-
-.partie-text p {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--secondary-blue);
-	padding-bottom: 62px;
-}
-
-.partie-text span {
-	font-weight: bold;
-	margin-left: 10px;
-}
-
-.email-input::placeholder {
-	font-weight: bold;
-}
-
-.demo-button {
-	padding: 12px 16px;
-	border: none;
-	border-radius: 30px;
-	font-weight: bold;
-	background-color: var(--primary-pink);
-	color: var(--primary-white);
-}
-
-.demo-button:hover {
-	background-color: var(--secondary-charm-pink);
 }
 
 /************************** partie 2 *******************************/
@@ -254,7 +186,60 @@ button a {
 
 /************************** partie 3 *******************************/
 
+.partie3 {
+	padding: 30px 20px 70px 20px;
+}
+
+.partie3 h2 {
+	font-size: var(--h2-size);
+	color: var(--secondary-blue);
+}
+
+.partie3 p {
+	text-align: center;
+	color: var(--secondary-light-san-jan-blue);
+}
+
+/************************** partie 3-5 *******************************/
+
+.partie3 {
+	padding: 30px 20px 70px 20px;
+}
+
+.partie3-5 h2 {
+	font-size: var(--h2-size);
+	color: var(--secondary-blue);
+}
+
+.partie3-5 p {
+	text-align: center;
+	color: var(--secondary-light-san-jan-blue);
+}
+
 /************************** partie 4 *******************************/
+
+.partie4 {
+	padding: 30px 20px 30px 20px;
+	gap: 50px;
+}
+
+.finance {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.finance h4 {
+	color: var(--secondary-mirage-blue);
+	font-size: var(--h3-small-line);
+}
+
+.finance p {
+	text-align: center;
+	color: var(--secondary-mirage-blue);
+}
 
 /**************************  footer *******************************/
 
@@ -265,6 +250,7 @@ footer {
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
+	margin-top: 70px;
 }
 
 footer nav {
@@ -299,37 +285,62 @@ footer a:hover {
 	padding-top: 20px;
 }
 
-
 /**************************  responsive  tablet *******************************/
 
 @media screen and (min-width: 570px) {
-	form .mail {
-        flex-direction: row;
-        gap: 0px
-    }
-
-    form {
-        justify-content: center;
-        align-items: center;
-    }
-
-    form h1 {
-        min-width: 48px;
-    }
-
-    .mail {
-        box-shadow: 5px 5px 10px #CCC;
-        width: min-content;
-        border-radius: 100px;
-    }
-
-    .mail button {
-        width: max-content;
-    }
+	
+	/************************** navbar *******************************/
+	.nav {
+		display: flex;
+		gap: 20px;
+		list-style: none;
+	}
+	.nav a {
+		text-decoration: none;
+		color: var(--secondary-light-san-jan-blue);
+	}
+	.nav a:hover {
+		color: var(--secondary-blue);
+	}	
+	.nav-boutton {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50px;
+		padding: 10px 20px 10px 20px;
+		background-color: var(--primary-pink);
+		color: var(--primary-white);
+		border: none;
+	}
 	.menu-burger {
 		display: none;
 	}
 
+	/************************** partie 1 *******************************/
+	form .mail {
+		flex-direction: row;
+		gap: 0px;
+	}
+
+	form {
+		justify-content: center;
+		align-items: center;
+	}
+
+	form h1 {
+		min-width: 48px;
+	}
+
+	.mail {
+		box-shadow: 5px 5px 10px #ccc;
+		width: min-content;
+		border-radius: 100px;
+	}
+
+	.mail button {
+		width: max-content;
+	}
 
 	footer {
 		display: flex;
@@ -349,12 +360,35 @@ footer a:hover {
 		display: flex;
 		flex-direction: row;
 	}
+
+	/************************** partie 4 *******************************/
+
+	.partie4 {
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 /**************************  responsive desktop  *******************************/
 
 @media screen and (min-width: 1081px) {
+	/**************************  responsive desktop  *******************************/
 	.partie2 {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	/************************** partie 3-5 *******************************/
+	.partie3-5 {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+
+	/************************** partie 4 *******************************/
+
+	.partie4 {
 		display: flex;
 		flex-direction: row;
 	}
