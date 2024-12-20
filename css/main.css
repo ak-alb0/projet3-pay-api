@@ -216,11 +216,17 @@ button a {
 .partie3 h2 {
 	font-size: var(--h2-size);
 	color: var(--secondary-blue);
+	text-align: center;
 }
 
 .partie3 p {
 	text-align: center;
 	color: var(--secondary-light-san-jan-blue);
+}
+
+.image-deux-telephonne {
+	display: flex;
+	flex-direction: row;
 }
 
 /************************** partie 3-5 *******************************/
@@ -413,6 +419,9 @@ footer a:hover {
 
 	.partie1 {
 		padding: 60px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
 	}
 
 	/**************************  rpartie 2  *******************************/
@@ -436,12 +445,27 @@ footer a:hover {
 
 	/************************** partie 3 *******************************/
 
+	.partie3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 30px;
+	}
+
+	.partie3 h2 {
+		text-align: left;
+	}
+
 	/************************** partie 3-5 *******************************/
 	.partie3-5 {
 		padding: 60px;
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: space-between;
+		justify-content: space-around;
+	}
+
+	.partie3-5-text h2 {
+		justify-content: flex-start;
 	}
 
 	/************************** partie 4 *******************************/
@@ -450,6 +474,7 @@ footer a:hover {
 		padding: 60px;
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
 	}
 
 	/************************** partie 5 *******************************/
@@ -458,6 +483,6 @@ footer a:hover {
 		padding: 60px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 }

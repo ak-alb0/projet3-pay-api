@@ -127,6 +127,74 @@ button:hover {
 	accent-color: var(--primary-pink);
 }
 
+/**************************  logo *******************************/
+
+.logo h2 {
+	text-align: center;
+	color: var(--secondary-light-san-jan-blue);
+	font-size: var(--h3-big-line);
+}
+
+.entreprise {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.entreprise-partie {
+	gap: 30px;
+}
+
+
+/**************************  input *******************************/
+
+.partie5 h2 {
+	color: var(--secondary-blue);
+	text-align: center;
+	font-size: var(--h3-big-line);
+}
+
+.partie5 form .mail {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.partie5 input {
+	border-radius: 100px;
+	border: none;
+	padding: 20px;
+	outline: none;
+	box-shadow: 5px 5px 10px #ccc;
+}
+
+.partie5 section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.partie5 form button {
+	border-radius: 100px;
+	padding: 20px;
+	background-color: var(--primary-pink);
+	color: #fbfcfe;
+	border: none;
+}
+
+.partie5 button:hover {
+	background-color: var(--secondary-charm-pink);
+}
+
+.partie5 form {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
 /**************************  footer *******************************/
 
 footer {

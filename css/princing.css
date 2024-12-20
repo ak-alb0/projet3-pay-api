@@ -139,6 +139,26 @@ hr {
 	color: var(--primary-white);
 }
 
+
+
+form button {
+	border-radius: 100px;
+	padding: 20px;
+	background-color: var(--primary-pink);
+	color: #fbfcfe;
+	border: none;
+}
+
+button:hover {
+	background-color: var(--secondary-charm-pink);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
 /**************************  footer *******************************/
 
 footer {
@@ -239,6 +259,16 @@ footer a:hover {
 		display: flex;
 		flex-direction: row;
 	}
+
+
+
+
+
+	.prix-tout {
+		display: flex;
+		flex-direction: row;
+	}
+
 }
 
 /**************************  responsive desktop  *******************************/
